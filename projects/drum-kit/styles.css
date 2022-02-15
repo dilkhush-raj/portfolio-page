@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  background-color: #222;
+  background-image: url(/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+}
+
+*{
+  user-select: none;
+}
+
+#title {
+  font-size: 5rem;
+  color: floralwhite;
+  text-shadow: 3px 0 #0af;
+
+}
+
+footer {
+  color: #777;
+  font-family: sans-serif;
+  background-color: #222;
+  padding: 4rem 1rem;
+}
+
+footer a{
+  color: #777;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+svg{
+  width: 50%;
+}
+
+
+@media (orientation: portrait) { 
+  svg{
+    width: 80%;
+  }
+}
