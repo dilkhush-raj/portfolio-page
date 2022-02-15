@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="robots" href="robots.txt">
     <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
     <meta http-equiv="EXPIRES" content="0" />
     <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-    <meta name="discription" content="Hi, my name is Dilkhush Raj. This is my portfolio website. I'm am BCA student, learning web-development. Visit to know more about me and my skills.">
+    <meta name="description"
+        content="Hi, my name is Dilkhush Raj. This is my portfolio website. I'm am BCA student, learning web-development. Visit to know more about me and my skills.">
     <meta name="keywords" content="Dilkhush, Raj, Portfolio, web developer, BCA, student">
     <title>Dilkhush Raj</title>
     <!-- Website Icon -->
     <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
     <!-- Typewriter Effect -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <!-- CSS shake -->
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <!-- lottie-player  -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Scroll bar animation  -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap Icon cdn Link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
@@ -28,7 +26,7 @@
 </head>
 
 <body>
-    
+
 
 
     <div class="navbar-root">
@@ -36,27 +34,39 @@
             <div class="navbar bi bi-list" id="bar">
             </div>
         </a>
+        <div class="svg-container">
+            <div id="night-mode" onclick="nightMode()">
+                <svg class="w-4 h-4 moon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg class="w-4 h-4 sun" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
         <nav id="menu" class="nav-menu-wrap ">
             <div class="profileWrap center">
-                <img src="./img/Dilkhush_Raj-150px.png" alt="Dilkhush Raj" class="dp shake-little" />
+                <img src="./img/Dilkhush_Raj-150px.png" alt="Dilkhush Raj" class="dp" />
                 <h2 class="nav-h2">Dilkhush Raj</h2>
                 <ul class="social-media">
-                    <li class="social-media-link shake-slow">
+                    <li class="social-media-link">
                         <a href="https://www.instagram.com/dilkhush.insta/" target="_blank">
                             <div class="social-icon"><i class="bi-instagram"></i></div>
                         </a>
                     </li>
-                    <li class="social-media-link shake-slow">
+                    <li class="social-media-link">
                         <a href="https://twitter.com/Dilkhush_India" target="_blank">
                             <div class="social-icon"><i class="bi-twitter"></i></div>
                         </a>
                     </li>
-                    <li class="social-media-link shake-slow">
+                    <li class="social-media-link">
                         <a href="https://github.com/dilkhush-github/" target="_blank">
                             <div class="social-icon"><i class="bi-github"></i></div>
                         </a>
                     </li>
-                    <li class="social-media-link shake-slow">
+                    <li class="social-media-link">
                         <a href="https://www.linkedin.com/in/dilkhushraj/" target="_blank">
                             <div class="social-icon"><i class="bi-linkedin"></i></div>
                         </a>
@@ -68,26 +78,24 @@
             </div>
             <div class="nav-menu">
                 <ul class="nav-menu-iteam">
-                    <li class="nav-text shake-little"><a href="#">Home</a></li>
-                    <li class="nav-text shake-little"><a href="#about">About Me</a></li>
-                    <li class="nav-text shake-little"><a href="#skill">My Skills</a></li>
-                    <li class="nav-text shake-little"><a href="#projects">My Projects</a></li>
-                    <li class="nav-text shake-little"><a href="#contact">Contact Me</a></li>
+                    <li class="nav-text"><a href="#">Home</a></li>
+                    <li class="nav-text"><a href="#about">About Me</a></li>
+                    <li class="nav-text"><a href="#skill">My Skills</a></li>
+                    <li class="nav-text"><a href="#projects">My Projects</a></li>
+                    <li class="nav-text"><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
     <div class="hero">
-        
-        <lottie-player class="shake-little" src="/img/hi.json" background="transparent" speed="1"
-            style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-            
+
         <h1> Dilkhush Raj</h1><br>
+
         <div class="typewriter">
             <span>I'm &nbsp;</span><span id="typewritter-text"><noscript>Enable script to view this</noscript></span>
         </div>
-        
+
 
     </div>
 
@@ -123,7 +131,8 @@
             </div>
         </section>
         <section id="projects">
-            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-terminal-fill"></i> My Projects</h2>
+            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-terminal-fill"></i> My
+                Projects</h2>
             <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
                 <h4>My web-development projects:</h4>
                 <ul data-aos="slide-right">
@@ -135,22 +144,28 @@
             </div>
         </section>
         <section id="contact">
-            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-person-lines-fill"></i> Contact Me</h2>
+            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-person-lines-fill"></i>
+                Contact Me</h2>
             <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
                 Discord: Dilkhush Raj#3770 <br>
                 Email: dilkhush_raj@yahoo.com <br>
             </div>
-             
+        </section>
+
+        <section>
+            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">Social Media</h2>
+            <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
+                Facebook: dilkhush.fb <br>
+                Instagram: dilkhush.insta <br>
+                Twitter: Dilkhush_India <br>
+                Discord: Dilkhush#3370 <br>
+            </div>
         </section>
     </div>
 
     <footer>
         Made with ❤ <a href="https://dilkhush.epizy.com">dilkhush.epizy.com</a>
     </footer>
-
-    <!-- Animate on Scroll Start  -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Animate on Scroll End  -->
 
     <script>
 
@@ -184,6 +199,10 @@
         AOS.init(); // Animate On Scroll Initailizing code 
 
     </script>
+    <!-- Animate on Scroll Start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Animate on Scroll End  -->
+    <script src="/script.js"></script>
 </body>
 
 </html>
