@@ -21,15 +21,31 @@ FOR DISPLAY WIDTH MORE THAN 769px
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-/*   
- @media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --text: #eee;
-    --color1: #000;
-    --color2: rgb(9, 9, 15);
-    --color3: #111;
+  --text: #eee;
+  --color1: #000;
+  --color2: #0af;
+  --color3: #111;
+  --dp-bg: #0af;
+  --sun-moon: rgb(255, 241, 241);
+  --h1: #0af;
+  --link: orange;
+  --section-color: #000009;
+  --nav: #0af;
+  --nav-text: #222;
+  --h2: #0af;
+  --h2-border: rgb(157, 188, 204);
+  --sky: #111;
+  --footer: black;
+  --footer-text: #333;
+  --navColor1: rgba(255, 255, 255, 0.5);
+  --nav-hover: #002;
+  --dp-bg: #002;
   }
-} */
+ }  */
+
 :root {
   --text: #222;
   --color1: #002;
@@ -41,7 +57,7 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --section-color: rgb(225, 255, 255);
   --nav: #002;
   --nav-text: white;
-  --h2: #002;
+  --h2: hsl(200, 100%, 2%);
   --h2-border: #0af;
   --sky: skyblue;
   --dp-bg: #0af;
@@ -61,14 +77,14 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --h1: #0af;
   --link: orange;
   --section-color: #000009;
-  --nav: #0af;
-  --nav-text: #222;
+  --nav: hsl(240, 100%, 4%);
+  --nav-text: #eee;
   --h2: #0af;
   --h2-border: rgb(157, 188, 204);
-  --sky: #111;
+  --sky: hsl(197, 71%, 2%);
   --footer: black;
   --footer-text: #333;
-  --navColor1: rgba(255, 255, 255, 0.5);
+  --navColor1: rgba(42, 45, 75, 0.5);
   --nav-hover: #002;
   --dp-bg: #002;
 }
