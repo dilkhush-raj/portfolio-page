@@ -22,30 +22,6 @@ FOR DISPLAY WIDTH MORE THAN 769px
   font-family: "Poppins", sans-serif;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-  --text: #eee;
-  --color1: #000;
-  --color2: #0af;
-  --color3: #111;
-  --dp-bg: #0af;
-  --sun-moon: rgb(255, 241, 241);
-  --h1: #0af;
-  --link: orange;
-  --section-color: #000009;
-  --nav: #0af;
-  --nav-text: #222;
-  --h2: #0af;
-  --h2-border: rgb(157, 188, 204);
-  --sky: #111;
-  --footer: black;
-  --footer-text: #333;
-  --navColor1: rgba(255, 255, 255, 0.5);
-  --nav-hover: #002;
-  --dp-bg: #002;
-  }
- }  */
-
 :root {
   --text: #222;
   --color1: #002;
@@ -115,11 +91,12 @@ h1 {
 h2 {
   color: var(--h2);
   margin-top: 2rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
   margin-bottom: 1rem;
   border-bottom: 3px solid var(--h2-border);
   display: inline-block;
   margin-top: 0.5rem;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar {
   background-color: var(--color1);
