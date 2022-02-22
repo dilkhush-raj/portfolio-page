@@ -1,6 +1,7 @@
 {
   "name": "Dilkhush Raj",
   "short_name": "DilkhushRaj",
+  "description": "Portfolio website of Dilkhush Raj",
   "id": "/index.html",
   "start_url": "/index.html",
   "display": "standalone",

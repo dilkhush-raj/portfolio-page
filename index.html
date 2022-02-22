@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta name="theme-color" content="#0af">
     <meta name="keywords" content="Dilkhush, Raj, Portfolio, web developer, BCA, student">
     <meta name="description"
         content="Hi, my name is Dilkhush Raj. This is my portfolio website. I'm am BCA student, learning web-development. Visit to know more about me and my skills.">
     <title>Dilkhush Raj</title>
     <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
     <link rel="robots" href="robots.txt">
     <style>
         .loader {
@@ -90,50 +90,41 @@
             <div class="lds-hourglass"></div>
         </div>
     </div>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--Animate On Scroll-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"><!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Animate On Scroll-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <!--Bootstrap Icons-->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/clouds.css">
 
     <div class="navbar-root">
-        <a to="#" class="menu-bars" onclick="menu()">
+        <i to="#" class="menu-bars" onclick="menu()">
             <div class="navbar bi bi-list" id="bar">
             </div>
-        </a>
-        <div class="svg-container">
-            <div id="night-mode" onclick="nightMode()">
-                <svg class="w-4 h-4 moon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg class="w-4 h-4 sun" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </div>
-        </div>
+        </i>
         <nav id="menu" class="nav-menu-wrap ">
             <div class="profileWrap center">
-                <img src="./img/Dilkhush_Raj-150px.png" alt="Dilkhush Raj" class="dp" />
+                <img src="./img/Dilkhush_Raj-150px.webp" alt="Dilkhush Raj" class="dp" />
                 <h2 class="nav-h2">Dilkhush Raj</h2>
                 <div class="keyboard">
                     <ul class="row">
                         <li class="key">
-                            <a href="https://www.instagram.com/dilkhush.insta/" target="_blank">
+                            <a href="https://www.instagram.com/dilkhush.insta/" target="_blank" title="instagram">
                                 <div class="social-icon"><i class="bi-instagram"></i></div>
                             </a>
                         </li>
                         <li class="key">
-                            <a href="https://twitter.com/Dilkhush_India" target="_blank">
+                            <a href="https://twitter.com/Dilkhush_India" target="_blank" title="twitter">
                                 <div class="social-icon"><i class="bi-twitter"></i></div>
                             </a>
                         </li>
                         <li class="key">
-                            <a href="https://github.com/dilkhush-github/" target="_blank">
+                            <a href="https://github.com/dilkhush-github/" target="_blank" title="github">
                                 <div class="social-icon"><i class="bi-github"></i></div>
                             </a>
                         </li>
                         <li class="key">
-                            <a href="https://www.linkedin.com/in/dilkhushraj/" target="_blank">
+                            <a href="https://www.linkedin.com/in/dilkhushraj/" target="_blank" title="linkedin">
                                 <div class="social-icon"><i class="bi-linkedin"></i></div>
                             </a>
                         </li>
@@ -142,18 +133,151 @@
             </div>
             <div class="nav-menu">
                 <ul class="nav-menu-iteam">
-                    <li class="nav-text"><a href="#">Home</a></li>
-                    <li class="nav-text"><a href="#about">About Me</a></li>
-                    <li class="nav-text"><a href="#skill">My Skills</a></li>
-                    <li class="nav-text"><a href="#projects">My Projects</a></li>
-                    <li class="nav-text"><a href="#contact">Contact Me</a></li>
+                    <li class="nav-text"><a href="#" title="home">Home</a></li>
+                    <li class="nav-text"><a href="#about" title="aboutme">About Me</a></li>
+                    <li class="nav-text"><a href="#skill" title="skill">My Skills</a></li>
+                    <li class="nav-text"><a href="#projects" title="porjects">My Projects</a></li>
+                    <li class="nav-text"><a href="#contact" title="contanct">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
     <div class="hero">
-        <h1> Dilkhush Raj</h1><br>
+
+            <div class="cloud-wrap">
+        <div class="svg-container">
+            <div id="night-mode" onclick="nightMode()">
+                <svg width="76px" height="76px" viewBox="0 0 41 40" class="w-4 h-4 moon">
+                    <g filter="url(#svgF_wClrn3_0)">
+                        <path
+                            d="M5.33203 25.0367C5.77892 25.1512 6.2346 25.2475 6.69836 25.3247C15.2402 26.7454 23.2875 21.124 24.6724 12.7687C25.15 9.88777 24.7731 7.05797 23.724 4.52832C31.5083 6.52296 36.6261 14.0398 35.3164 21.9414C33.9314 30.2967 25.8841 35.9182 17.3423 34.4974C11.7457 33.5665 7.32543 29.8435 5.33203 25.0367Z"
+                            fill="url(#svgPL_wClrn3_0)"></path>
+                    </g>
+                    <defs>
+                        <filter id="svgF_wClrn3_0" x="3.33203" y="2.52832" width="34.1887" height="36.1887"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset></feOffset>
+                            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.996078 0 0 0 0 0.878431 0 0 0 0 0.411765 0 0 0 1 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"></feBlend>
+                        </filter>
+                        <linearGradient id="svgPL_wClrn3_0" x1="24.766" y1="40.1887" x2="8.66853" y2="11.3295"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.0851237" stop-color="#FF9900"></stop>
+                            <stop offset="0.50451" stop-color="#FBE000"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <svg width="75px" height="76px" viewBox="0 0 41 41" class="w-4 h-4 sun">
+                    <g filter="url(#svgF_wMsund_0)">
+                        <ellipse cx="17.9264" cy="20.0417" rx="14.1667" ry="14.1667" fill="url(#svgPL_wMsund_0)">
+                        </ellipse>
+                    </g>
+                    <g filter="url(#svgF_wMsund_1)">
+                        <path
+                            d="M19.5194 20.2085C18.9551 20.2085 18.4262 20.3257 17.9325 20.5601C17.4387 20.7944 17.005 21.1108 16.6312 21.5093C16.2574 21.9077 15.9647 22.3843 15.7531 22.939C15.5415 23.4937 15.4322 24.0835 15.4251 24.7085C15.4251 25.3335 15.5309 25.9155 15.7425 26.4546C15.9541 26.9937 16.2433 27.4702 16.61 27.8843C16.9768 28.2983 17.4105 28.6226 17.9113 28.8569C18.4121 29.0913 18.9375 29.2085 19.4876 29.2085H31.6751C32.4227 29.2085 33.1245 29.0522 33.7804 28.7397C34.4364 28.4272 35.0112 28.0015 35.5049 27.4624C35.9986 26.9233 36.3865 26.2866 36.6686 25.5522C36.9507 24.8179 37.0918 24.0366 37.0918 23.2085C37.0918 22.3804 36.9507 21.603 36.6686 20.8765C36.3865 20.1499 36.0021 19.5132 35.5155 18.9663C35.0288 18.4194 34.454 17.9897 33.791 17.6772C33.128 17.3647 32.4227 17.2085 31.6751 17.2085C31.3507 17.2085 31.0227 17.2437 30.6912 17.314C30.4091 16.8296 30.0847 16.396 29.7179 16.0132C29.3512 15.6304 28.9456 15.3022 28.5013 15.0288C28.057 14.7554 27.5915 14.5522 27.1048 14.4194C26.6182 14.2866 26.1104 14.2163 25.5814 14.2085C24.7985 14.2085 24.0615 14.3608 23.3703 14.6655C22.6791 14.9702 22.062 15.3882 21.5189 15.9194C20.9758 16.4507 20.535 17.0874 20.1965 17.8296C19.8579 18.5718 19.6322 19.3647 19.5194 20.2085Z"
+                            fill="url(#svgPL_wMsund_1)"></path>
+                    </g>
+                    <path
+                        d="M37.0197 22.6891C37.0197 25.3971 34.4402 27.0541 31.8862 27.0541C29.3322 27.0541 27.2617 24.8588 27.2617 22.1508C27.2617 19.4428 29.3322 17.2476 31.8862 17.2476C34.4402 17.2476 37.0197 19.9811 37.0197 22.6891Z"
+                        fill="url(#svgPL_wMsund_2)"></path>
+                    <path
+                        d="M30.3604 18.9634C29.3047 18.9634 28.3637 19.3778 27.6293 20.036C27.6293 20.036 27.6063 20.036 27.6063 20.0604C28.0424 19.0853 28.7998 18.2808 29.7178 17.8176C28.9375 16.8668 27.8129 16.2817 26.5277 16.2817C24.2097 16.2817 22.3507 18.2808 22.3507 20.6942C22.3507 21.0843 22.3966 21.4743 22.4884 21.84C22.1671 21.7181 21.8229 21.645 21.4557 21.645C19.8492 21.645 18.541 23.0346 18.541 24.7167C18.541 26.3988 19.8492 27.7883 21.4557 27.7883C21.4786 27.7883 21.5016 27.7883 21.5016 27.7883H30.2686C30.2915 27.7883 30.3145 27.7883 30.3374 27.7883C32.6554 27.7883 34.5144 25.7893 34.5144 23.3759C34.5144 20.9624 32.6554 18.9634 30.3604 18.9634Z"
+                        fill="url(#svgPL_wMsund_3)"></path>
+                    <defs>
+                        <filter id="svgF_wMsund_0" x="1.75977" y="3.875" width="32.3333" height="34.3333"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset></feOffset>
+                            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.996078 0 0 0 0 0.878431 0 0 0 0 0.411765 0 0 0 1 0"></feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"></feBlend>
+                        </filter>
+                        <filter id="svgF_wMsund_1" x="13.4258" y="14.2085" width="25.6667" height="19"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                            <feOffset dy="2"></feOffset>
+                            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                            </feColorMatrix>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                        </filter>
+                        <linearGradient id="svgPL_wMsund_0" x1="7.74414" y1="9.85937" x2="32.0915" y2="31.8158"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.0653907" stop-color="#FFE975"></stop>
+                            <stop offset="0.420045" stop-color="#FFB729"></stop>
+                            <stop offset="0.595906" stop-color="#FF9900"></stop>
+                        </linearGradient>
+                        <linearGradient id="svgPL_wMsund_1" x1="18.431" y1="16.6159" x2="37.595" y2="27.4425"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white"></stop>
+                            <stop offset="0.551728" stop-color="#D9E7EF"></stop>
+                            <stop offset="0.96875" stop-color="#ADDDF9"></stop>
+                        </linearGradient>
+                        <linearGradient id="svgPL_wMsund_2" x1="30.3006" y1="17.3877" x2="31.6295" y2="22.9581"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.265243" stop-color="#F4F8FA"></stop>
+                            <stop offset="0.899425" stop-color="#F4F8FA" stop-opacity="0"></stop>
+                        </linearGradient>
+                        <linearGradient id="svgPL_wMsund_3" x1="20.3822" y1="20.2642" x2="32.6504" y2="27.8141"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.0589154" stop-color="#BAD7E7"></stop>
+                            <stop offset="0.464316" stop-color="#DEEBF2"></stop>
+                            <stop offset="0.6583" stop-color="#DEEBF2"></stop>
+                            <stop offset="1" stop-color="#BDE1F6"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+                <div class="cloud cloud-1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="cloud normal cloud-2">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="cloud large cloud-3">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        <h1> Dilkhush Raj
+        </h1><br>
         <div class="typewriter">
             <span>I'm &nbsp;</span><span id="typewritter-text"><noscript>Enable script to view this</noscript></span>
         </div>
@@ -183,8 +307,6 @@
                             class="bi bi-star"></i> <i class="bi bi-star"></i> <i class="bi bi-star"></i></li>
                     <li>Bootstrap <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                             class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i> <i class="bi bi-star"></i></li>
-                    <!-- <li>React <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i>
-                        <i class="bi bi-star"></i> <i class="bi bi-star"></i></li> -->
                     <li>Photoshop <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                             class="bi bi-star-fill"></i> <i class="bi bi-star"></i> <i class="bi bi-star"></i></li>
                 </ul>
@@ -194,12 +316,13 @@
             <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-terminal-fill"></i> My
                 Projects</h2>
             <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
-                <h4>My web-development projects:</h4>
+                <h3>My web-development projects:</h3>
                 <ul data-aos="slide-right">
-                    <li><a href="/projects/drum">Drum Kit v1.0</a></li>
-                    <li><a href="/projects/drum-kit">Drum Kit v2.0</a></li>
-                    <li><a href="/projects/error/404">My Random 404 Page</a></li>
-                    <li><a href="/projects/top-singer/">List of top streamed artists on spotify</a></li>
+                    <li><a href="/projects/drum" title="drumkit 1">Drum Kit v1.0</a></li>
+                    <li><a href="/projects/drum-kit" title="drumkit 2">Drum Kit v2.0</a></li>
+                    <li><a href="/projects/error/404" title="404 page">My Random 404 Page</a></li>
+                    <li><a href="/projects/top-singer/" title="singer list">List of top streamed artists on spotify</a>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -225,7 +348,7 @@
     </div>
 
     <footer>
-        Made with ❤ <a href="https://dilkhush.epizy.com">dilkhush.epizy.com</a>
+        Made with ❤ <a href="https://dilkhush.epizy.com" title="homepage">dilkhush.epizy.com</a>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

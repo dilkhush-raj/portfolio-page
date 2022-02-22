@@ -1,13 +1,5 @@
-ErrorDocument 404 /projects/error/404/
-<IfModule mod_expires.c> 
-  ExpiresActive On
-  ExpiresDefault "access plus 1 seconds"
-  ExpiresByType text/html "access plus 1 seconds"
-  ExpiresByType image/x-icon "access plus 2592000 seconds"
-  ExpiresByType image/gif "access plus 2592000 seconds"
-  ExpiresByType image/jpeg "access plus 2592000 seconds"
-  ExpiresByType image/png "access plus 2592000 seconds"
-  ExpiresByType text/css "access plus 300 seconds"
-  ExpiresByType text/javascript "access plus 86400 seconds"
-  ExpiresByType application/x-javascript "access plus 2400 seconds"
-</IfModule>
+ErrorDocument 404 /404/
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

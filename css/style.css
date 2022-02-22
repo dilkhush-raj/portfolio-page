@@ -30,7 +30,7 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --color3: #222;
   --sun-moon: yellow;
   --h1: #002;
-  --link: orangered;
+  --link: rgb(63, 17, 0);
   --section-color: rgb(225, 255, 255);
   --nav: #002;
   --nav-text: white;
@@ -39,9 +39,12 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --sky: skyblue;
   --dp-bg: #0af;
   --footer: #222;
-  --footer-text: #444;
+  --footer-text: rgb(247, 247, 247);
   --navColor1: rgba(31, 33, 56, 0.5);
   --nav-hover: #0af;
+  --cloud1: #f7e7eb;
+  --cloud2: #fafbf0;
+  --hero-img: url(/img/hero-img.svg);
 }
 
 .darkmode {
@@ -52,18 +55,21 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --dp-bg: #0af;
   --sun-moon: rgb(255, 241, 241);
   --h1: #0af;
-  --link: orange;
-  --section-color: #303a52;
-  --nav: #232933;
+  --link: #eee;
+  --section-color: #111;
+  --nav: #050505;
   --nav-text: #eee;
   --h2: #0af;
   --h2-border: rgb(157, 188, 204);
   --sky: #0d0c1d;
-  --footer: black;
-  --footer-text: #333;
+  --footer: #222;
+  --footer-text: rgb(247, 247, 247);
   --navColor1: rgba(0, 0, 0, 0.2);
-  --nav-hover: #e71d36;
+  --nav-hover: #0af;
   --dp-bg: #002;
+  --cloud2: rgb(18, 18, 36);
+  --cloud1: #07070e;  
+  --hero-img: url(/img/hero-img-dark.svg);
 }
 
 html {
@@ -91,6 +97,7 @@ ul {
 h1 {
   color: var(--h1);
   font-size: 3rem;
+  z-index: 3;
 }
 h2 {
   color: var(--h2);
@@ -281,11 +288,11 @@ i {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url(/img/hero-img.svg), url(/img/cloud-dark.svg);
+  background-image: var(--hero-img);
   background-size: 100vh;
   background-color: var(--sky);
   background-position: bottom, top;
-  transition: background-color 500ms;
+  transition: 500ms ease-in-out;
 }
 .typewriter {
   font-size: 1.5rem;
@@ -338,6 +345,7 @@ footer a {
 /* FOR DISPLAY WIDTH MORE THAN 769px  */
 @media screen and (min-width: 769px) {
   .home,
+  .cloud-wrap,
   .hero {
     padding-left: 275px;
   }
@@ -378,7 +386,7 @@ footer a {
   height: 100px;
 }
 .svg-container #night-mode {
-  transition: ease 0.5s;
+  transition: ease-in-out 0.5s;
   transform: translateY(-100px);
 }
 .svg-container #night-mode.active {
@@ -390,9 +398,15 @@ footer a {
 }
 .svg-container svg.sun {
   color: yellow;
+  size: 3rem;
 }
 .svg-container svg.moon {
   color: rgb(219, 219, 219);
+}
+.clouds{
+  position: absolute;
+  top: 10%;
+  left: 20%;
 }
 
 .keyboard {
