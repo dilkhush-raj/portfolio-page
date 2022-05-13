@@ -9,7 +9,7 @@
     <meta name="description"
         content="Hi, my name is Dilkhush Raj. This is my portfolio website. I'm am BCA student, learning web-development. Visit to know more about me and my skills.">
     <title>Dilkhush Raj</title>
-    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/logo.svg" type="image/x-icon">
     <link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
     <link rel="robots" href="robots.txt">
     <style>
@@ -85,17 +85,17 @@
 </head>
 
 <body>
-    <div id="loading">
+    <!-- <div id="loading">
         <div class="loader">
             <div class="lds-hourglass"></div>
         </div>
-    </div>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </div> -->
+    <link rel="stylesheet" href="/assets/css/aos.css" />
     <!--Animate On Scroll-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/bootstrap-icons/bootstrap-icons.css">
     <!--Bootstrap Icons-->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/clouds.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/clouds.css">
 
     <div class="navbar-root">
         <i to="#" class="menu-bars" onclick="menu()">
@@ -104,28 +104,28 @@
         </i>
         <nav id="menu" class="nav-menu-wrap ">
             <div class="profileWrap center">
-                <img src="./img/Dilkhush_Raj-150px.webp" alt="Dilkhush Raj" class="dp" />
+                <img src="/assets/img/Dilkhush_Raj-150px.webp" alt="Dilkhush Raj" class="dp" />
                 <h2 class="nav-h2">Dilkhush Raj</h2>
                 <div class="keyboard">
                     <ul class="row">
                         <li class="key">
                             <a href="https://www.instagram.com/dilkhush.insta/" target="_blank" title="instagram">
-                                <div class="social-icon"><i class="bi-instagram"></i></div>
+                                <i class="bi-instagram social-icon"></i>
                             </a>
                         </li>
                         <li class="key">
                             <a href="https://twitter.com/Dilkhush_India" target="_blank" title="twitter">
-                                <div class="social-icon"><i class="bi-twitter"></i></div>
+                                <i class="bi-twitter social-icon"></i>
                             </a>
                         </li>
                         <li class="key">
                             <a href="https://github.com/dilkhush-github/" target="_blank" title="github">
-                                <div class="social-icon"><i class="bi-github"></i></div>
+                                <i class="bi-github social-icon"></i>
                             </a>
                         </li>
                         <li class="key">
                             <a href="https://www.linkedin.com/in/dilkhushraj/" target="_blank" title="linkedin">
-                                <div class="social-icon"><i class="bi-linkedin"></i></div>
+                                <i class="bi-linkedin social-icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -284,9 +284,9 @@
     </div>
 
     <div class="home">
-        <section id="about">
-            <h2 data-aos="slide-right"><i class="bi bi-lightbulb-fill"></i> About Me</h2>
-            <div data-aos="slide-right">
+        <section id="about" data-aos="slide-up" data-aos-anchor-placement="top-middle">
+            <h2><i class="bi bi-lightbulb-fill"></i> About Me</h2>
+            <div>
                 My name is Dilkhush Raj and I'm from Bihar, India. I am currently doing my BCA course from an Open
                 University (IGNOU). I am also learning web-development from Udemy by Dr. Angela Yu. Though most of my
                 time goes into my studies, I still do spend some hours on the Internet to learn about new technologies
@@ -294,10 +294,10 @@
             </div>
 
         </section>
-        <section id="skill">
-            <h2 data-aos="slide-right"><i class="bi bi-gear-fill"></i> My Skills</h2>
-            <div data-aos="slide-right">
-                <ul data-aos="slide-right">
+        <section id="skill" data-aos="slide-up" data-aos-anchor-placement="top-middle">
+            <h2><i class="bi bi-gear-fill"></i> My Skills</h2>
+            <div>
+                <ul>
                     <li>HTML <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
                             class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
                     </li>
@@ -312,51 +312,53 @@
                 </ul>
             </div>
         </section>
-        <section id="projects">
-            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-terminal-fill"></i> My
+        <section id="projects" data-aos="slide-up" data-aos-anchor-placement="top-middle">
+            <h2><i class="bi bi-terminal-fill"></i> My
                 Projects</h2>
-            <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
+            <div>
                 <h3>My web-development projects:</h3>
-                <ul data-aos="slide-right">
+                <ul>
                     <li><a href="/projects/drum" title="drumkit 1">Drum Kit v1.0</a></li>
                     <li><a href="/projects/drum-kit" title="drumkit 2">Drum Kit v2.0</a></li>
                     <li><a href="/projects/error/404" title="404 page">My Random 404 Page</a></li>
                     <li><a href="/projects/top-singer/" title="singer list">List of top streamed artists on spotify</a>
                     </li>
+                    ** Links will be fixed soon.
                 </ul>
+                
             </div>
         </section>
-        <section id="contact">
-            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-person-lines-fill"></i>
+        <section id="contact" data-aos="slide-up" data-aos-anchor-placement="top-middle">
+            <h2><i class="bi bi-person-lines-fill"></i>
                 Contact Me</h2>
-            <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
+            <div>
                 Discord: Dilkhush Raj#3770 <br>
                 Email: dilkhush_raj@yahoo.com <br>
             </div>
         </section>
 
-        <section>
-            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">Social Media</h2>
-            <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
+        <!-- <section>
+            <h2 data-aos="slide-up" data-aos-anchor-placement="top-middle">Social Media</h2>
+            <div data-aos="slide-up" data-aos-anchor-placement="top-middle">
                 Facebook: dilkhush.fb <br>
                 Instagram: dilkhush.insta <br>
                 Twitter: Dilkhush_India <br>
                 Discord: Dilkhush#3370 <br>
             </div>
 
-        </section>
+        </section> -->
     </div>
 
     <footer>
         Made with ❤ <a href="https://dilkhush.epizy.com" title="homepage">dilkhush.epizy.com</a>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="/assets/js/aos.js"></script> -->
     <!--Animate On Scroll-->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="/assets/js/core.js"></script>
     <!--Typewriter Effect-->
-    <script src="/js/app.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

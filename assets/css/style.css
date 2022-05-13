@@ -44,7 +44,7 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --nav-hover: #0af;
   --cloud1: #f7e7eb;
   --cloud2: #fafbf0;
-  --hero-img: url(/img/hero-img.svg);
+  --hero-img: url(/assets/img/hero-img.svg);
 }
 
 .darkmode {
@@ -57,19 +57,23 @@ FOR DISPLAY WIDTH MORE THAN 769px
   --h1: #0af;
   --link: #eee;
   --section-color: #111;
+  --section-color: url(/assets/img/nami.png);
   --nav: #050505;
+  --nav: url(/assets/img/padded.png);
+  --nav-border: #a6b6ff;
   --nav-text: #eee;
   --h2: #0af;
   --h2-border: rgb(157, 188, 204);
   --sky: #0d0c1d;
   --footer: #222;
+  --footer: url(/assets/img/soft_kill.png);
   --footer-text: rgb(247, 247, 247);
   --navColor1: rgba(0, 0, 0, 0.2);
   --nav-hover: #0af;
   --dp-bg: #002;
   --cloud2: rgb(18, 18, 36);
   --cloud1: #07070e;  
-  --hero-img: url(/img/hero-img-dark.svg);
+  --hero-img: url(/assets/img/hero-img-dark.svg);
 }
 
 html {
@@ -132,7 +136,7 @@ h2 {
 .navbar {
   height: 50px;
   width: 50px;
-  background-color: var(--nav);
+  background: var(--nav);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +165,8 @@ h2 {
   transition: all 500ms;
   display: flex;
   flex-direction: column;
-  background-color: var(--nav);
+  background: var(--nav);
+  border-right: 5px solid var(--nav-border);
   z-index: 89;
   min-height: 100vh;
 }
@@ -301,11 +306,12 @@ i {
   margin: 0;
   display: flex;
   color: orange;
+  flex-wrap: wrap;
 }
 
 /* HOME SECTION  */
 .home {
-  background-color: var(--section-color);
+  background: var(--section-color);
   transition: background-color 500ms;
   display: grid;
   grid-template-columns: 1fr;
@@ -333,7 +339,7 @@ section {
 
 /* FOOTER SECTION  */
 footer {
-  background-color: var(--footer);
+  background: var(--footer);
   color: var(--footer-text);
   padding: 20px;
   text-align: center;

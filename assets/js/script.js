@@ -66,7 +66,7 @@ typewriter
   .typeString("BCA student")
   .pauseFor(2500)
   .deleteChars(11)
-  .typeString("Learning Web-development")
+  .typeString("Learning Web development")
   .pauseFor(2500)
   .start();
 // Typewriter Home End
